@@ -1,0 +1,429 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    margin: 2% 10% 0% 10%;
+}
+
+/* header */
+#header {
+    background-color: #161616;
+    color: aliceblue;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+
+}
+
+.box {
+    width: 50%;
+    padding: 25px 100px;
+}
+
+.box h1 {
+    font-size: 3rem;
+    width: 500px;
+}
+
+.box p {
+    width: 300px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#header img {
+    height: 96%;
+
+}
+
+.button {
+    background: rgb(204, 26, 26);
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Content Section */
+.live {
+    margin-top: 50px
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+
+.player {
+    display: grid;
+    box-shadow: 0px 1px 2px #ccc;
+    border-radius: 10px;
+}
+
+.icon {
+    margin-left: 15px;
+    display: flex;
+    gap: 5px;
+    color: rgb(78 78 78);
+}
+
+.player img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.title {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/* Fixtures */
+
+
+.match{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.team{
+    height: auto !important;
+    width: 70px !important;
+    padding: 10px 20px;
+}
+
+.vs{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.match-title{
+    text-align: center;
+}
+
+.match-time{
+    font-size: 14px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.button1 {
+    margin-top: 5px;
+    width: 100px;
+    margin-left: 15px;
+    background-color: #f4f4f4;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #161616;
+}
+
+.comments {
+    margin-left: 20px;
+}
+
+.vertical-box {
+    background-color: #161616;
+    width: 25%;
+    float: left;
+    margin-right: 15px;
+    size: 30px;
+    font-size: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    border-radius: 10px;
+}
+
+.button2 {
+    /* width: 100%; */
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 12px 70px;
+    border: 1px solid rgb(236, 236, 236);
+    background-color: #fff;
+    color: #161616;
+    text-decoration: none;
+
+}
+
+.red {
+    background-color: red;
+    color: #fff;
+    border: none;
+}
+
+.red:hover {
+    background-color: #fff;
+    color: #000;
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+
+.tablet {
+    display: none;
+}
+
+
+
+/* Footer section */
+#footer {
+    margin-top: 30px;
+    height: 250px;
+    width: 100%;
+    background-color: #161616;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#footer h1 {
+    margin-top: 70px;
+}
+
+#footer hr {
+    width: 60%;
+    border: 1px solid #727272;
+}
+
+#footer nav {
+    width: 50%;
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+}
+
+#footer nav a {
+    text-decoration: none;
+    margin-right: 40px;
+    color: #B9B9B9;
+    font-size: 14px;
+    text-align: center;
+}
+
+.social{
+    display: none;
+}
+
+/* For Tablet Screen */
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+    .body {
+        margin: 2% 5% 0% 5%;
+    }
+
+    .box {
+        width: 40%;
+        padding: 25px 100px;
+    }
+
+    .box h1 {
+        font-size: 2rem;
+        width: 300px;
+    }
+
+    .vertical-box {
+        background-color: #fff;
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .button2 {
+        font-size: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+        padding: 12px 50px;
+        border: 1px solid rgb(236, 236, 236);
+        background-color: #fff;
+
+    }
+
+    .red {
+        background-color: red;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .players {
+        float: right;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 20px;
+        width: 100%;
+    }
+
+    .tablet {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tablet button {
+        margin-top: 30px;
+        width: 200px;
+    }
+    .social{
+        display: none;   
+    }
+}
+
+/* For Mobile Screen  */
+@media only screen and (max-width: 600px) {
+
+    .body {
+        margin: 0 auto;
+    }
+
+    /* header */
+    #header {
+        background-color: #161616;
+        color: aliceblue;
+        background-repeat: no-repeat;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+    }
+
+    #header img {
+        height: 250px;
+        width: auto;
+    }
+
+    .box {    width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+
+    }
+
+    .box h1 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .box p {
+        font-size: 12px;
+        font-weight: 500;
+        width: 80%;
+        padding: 10px 0px;
+        margin-left: 10%;
+    }
+
+    .live {
+        margin-top: 10px;
+    }
+
+    .vertical-box {
+        background-color: #fff;
+        width: 100%;
+        font-size: 18px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        /* gap: 10px; */
+        margin-bottom: 10px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
+    .button2 {
+        font-size: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+        padding: 12px 50px;
+        border: 1px solid rgb(236, 236, 236);
+        background-color: #fff;
+
+    }
+
+    .red {
+        background-color: red;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .players {
+        margin: 0px 8px;
+        float: right;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 20px;
+        width: 95%;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    #footer{
+        height: auto;
+        padding-bottom: 30px;
+    }
+    #footer h1 {
+        margin-top: 40px;
+    }
+
+    #footer hr {
+        width: 80%;
+    }
+    #footer nav {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        text-align: center;
+    }
+
+
+    #footer nav a {
+        text-decoration: none;
+        color: #B9B9B9;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+    .social{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 25px;
+    }
+    .social a{
+        text-decoration: none;
+    }
+    .social a i{
+        color: #fff;
+    }
+}
